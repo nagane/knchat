@@ -1,0 +1,117 @@
+// --------------------------------
+// リセットCSS
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+// --------------------------------
+html {
+	font-family: Meiryo, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+//	font-size: 14px;
+}
+
+body {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 10px 10px 0 10px;
+	line-height: 1.5;
+//	padding: 2em 1em;
+//	background-color: #000;
+//	color: #fff;
+//	background-image: "_images/_BG_stripe_grey.gif";
+}
+
+// --------------------------------
+.L_btn_e_d_effect() {
+	box-sizing: border-box;
+	padding: 3px 0.5em;
+	border-radius: 4px;
+	transition: 0.3s;
+	border: 2px solid #22f;
+	background-color: #ddf;
+	color: #22f;
+	font-size: 0.8em;
+}
+
+.btn_e_d_effect { .L_btn_e_d_effect; }
+.btn_e_d_effect:disabled {
+	border: 2px solid #aaa;
+	background-color: #ddd;
+	color: #aaa;
+}
+
+.btn_entr_room {
+	padding: 0 0.5em;
+	font-size: 0.8em;
+}
+
+// --------------------------------
+.L_input_placeholder() {
+	text-align: center;
+	font-size: 0.7em;
+	color: #999;
+}
+
+.input_uname {
+	box-sizing: border-box;
+	width: 200px;
+	padding: 4px 0.5em;
+	border: 2px solid #555;
+	border-radius: 4px;
+	transition: 0.3s;
+	font-size: 1em;
+}
+.input_uname::placeholder {
+	.L_input_placeholder;
+}
+.input_uname:focus {
+	background-color: #fee;
+}
+
+// --------------------------------
+.room_members {
+/*	position: relative; */
+	display: table;
+	width: 100%;
+	list-style: none;
+}
+.member_inRoom {
+	float: left;
+	margin: 0 2em 0 0;
+//	vertical-align: middle;
+}
+
+.L_hr_1dot() {
+	border-top: 1px dotted #888;
+	border-bottom: none;
+}
+.hr_1dot { .L_hr_1dot; }
+
+.hr_room_prof { .L_hr_1dot; }
+
+// --------------------------------
+.hr_topic {
+	border-top: 2px solid #888;
+	border-bottom: none;
+}
+
+// --------------------------------
+.dbgcnsl_hr {
+	border-top: 1px dashed blue;
+	border-bottom: none;
+}
+
+
+// --------------------------------
+
+@import "styl_crt_usr.less";
+@import "styl_rating.less";
+@import "styl_room.less";
+
